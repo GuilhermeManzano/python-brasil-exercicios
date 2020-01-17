@@ -1,0 +1,14 @@
+# Faça um Programa que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+# Observando os termos no plural a colocação do "e", da vírgula entre outros. Exemplo:
+# 326 = 3 centenas, 2 dezenas e 6 unidades
+# 12 = 1 dezena e 2 unidades Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
+
+n = 1001
+while n > 1000:
+    n = int(input('Digite um número inteiro menor que 1000: '))
+aux = n
+centenas = aux // 100
+aux = aux % 100
+dezenas = aux // 10
+aux = aux % 10
+unidades = aux // 1
